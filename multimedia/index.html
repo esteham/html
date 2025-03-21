@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multimedia Example</title>
+	<style type="text/css">
+		body
+		{
+			margin: 0;
+			padding: 0;
+			background-image: url('images/slider.jpg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		a
+		{
+			text-decoration: none;
+			font-size: 25px;
+		}
+	</style>
+
+
+</head>
+<body>
+
+	<header style="background: rgba(255,255,255,0.8); text-align: center; padding: 10px;">
+		<h1>Welcome to My Homepage</h1>
+
+		<nav>
+			<a href="index.html">Home</a> |
+			<a href="#about">About</a> |
+			<a href="#services">Services</a> |
+			<a href="#contact">Contact</a> |
+			<a href="team.html">Our Team</a> |
+			<a href="download.html" target="_blank">Download Pdf</a>
+		</nav>
+	</header>
+
+	<main style="text-align: center; padding: 50px; color: orange;">
+		<h2>Content Area</h2>
+		<p>This is the main content area, You can put your desired content here</p>
+
+		<section style="text-align: center; margin: 20px;">
+			<h2>Audio Example</h2>
+			<audio controls autoplay loop>
+				<source src="multimedia/horse.mp3" type="audio/mp3">
+				<source src="multimedia/horse.ogv" type="audio/ogv">
+					Your browser does not support this audio element.
+			</audio>
+		</section>
+
+		<!-- Video Section -->
+
+		<section style="text-align: center; margin: 20px;">
+			<h2>Video Example</h2>
+			<video controls autoplay loop muted width="450">
+				<source src="multimedia/movie-1.mp4" type="video/mp4">				
+					Your browser does not support this video element.
+			</video>
+
+		</section>
+
+		<section style="text-align: center; margin: 20px;">
+			<h2>Canvas</h2>			
+			<canvas id="myCanvasCircle" width="200" height="100" style="border: 1px solid #d3d3d3;">
+				Your browser does not support canvas element.
+			</canvas>
+	<script type="text/javascript">
+		var c = document.getElementById('myCanvasCircle');
+		var ctx = c.getContext("2d");
+		ctx.beginPath();
+		ctx.arc(95,50,40,0,2*Math.PI);
+		ctx.stroke();
+		ctx.font = "30px Arial";
+		ctx.fillText("Hello Cogent",10,50);
+	</script>
+		</section>
+
+	<section style="text-align: center; margin: 20px;">
+			<h2>Details Element Example</h2>
+			
+			<details>
+				<summary>This is default content</summary>
+				<p>This is main content which will be shows.</p>
+				<img src="images/4.png" width="250" height="150">	
+			</details>
+			
+		</section>
+
+	</main>
+
+	<footer style="background: rgba(255,255,255,0.8); text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%;">
+		<p>&copy; 2025 cogent, All Rights Reserved.</p>
+	</footer>
+
+</body>
+</html>

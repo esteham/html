@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DIV Example</title>
+	<style type="text/css">
+		div
+		{
+			background-color: aqua;
+			width: 200px;
+			height: 300px;
+			float: left;
+			margin-left: 10px;
+			margin-top: 15px;
+		}
+
+		.subdiv
+		{
+			width: 150px;
+			height: 200px;
+			background-color: red;
+		}
+
+		.picdiv
+		{
+			width: 120px;
+			height: 100px;
+			border: 1px solid black;
+		}
+
+		nav
+		{
+			border: 1px;
+			background-color: green;
+			color: white;			
+		}
+
+		a
+		{
+			text-decoration: none;
+			color: white;
+			font-size: 20px;
+			padding: 20px;
+		}	
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="#">Home</a>|
+			<a href="#">Products</a>|
+			<a href="#">Services</a>|
+			<a href="#">About Us</a>|
+			<a href="#">Contact</a>
+		</nav>
+	</header>
+	<div>
+		<h3>This is DIV-1</h3>
+		<div class="subdiv">
+			<p>DIV-1 Description</p>
+			<div class="picdiv">
+				<img src="images/1.png" width="100px" height="100px">
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<h3>This is DIV-2</h3>
+		<div class="subdiv">
+			<p>DIV-2 Description</p>
+			<div class="picdiv">
+				<img src="images/2.png" width="100px" height="100px">
+			</div>
+		</div>
+	</div>
+	<div>
+		<h3>This is DIV-3</h3>
+		<div class="subdiv">
+			<p>DIV-3 Description</p>
+			<div class="picdiv">
+				<img src="images/donuts.jpg" width="100px" height="100px">
+			</div>
+		</div>
+	</div>
+</body>
+</html>

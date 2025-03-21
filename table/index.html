@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Creatring Table</title>
+	<style type="text/css">
+		table
+		{
+			border-collapse: collapse;		
+		}
+		th
+		{
+			background-color: green;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<h2>Creating Basic Table Structure</h2>
+	<table>
+		<tr>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>Asad</td>
+			<td>Ullah</td>
+			<td>58</td>
+		</tr>
+		<tr>
+			<td>Hafiz</td>
+			<td>Ahmed</td>
+			<td>32</td>
+		</tr>
+	</table>
+
+	<br>
+
+	<table border="1" style="width: 75%;" cellpadding="5" cellspacing="5">
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Department</th>
+		</tr>
+		<tr>
+			<td>1001</td>
+			<td>Asad</td>
+			<td>Admin</td>
+		</tr>
+		<tr>
+			<td>1002</td>
+			<td>Zahir</td>
+			<td>IT</td>
+		</tr>
+		<tr>
+			<td>1003</td>
+			<td>Jalal</td>
+			<td>Marketing</td>
+		</tr>
+	</table>
+	<br>
+	<table border="1">
+		<tr>
+			<td>Column 1</td>
+			<td colspan="2">
+				<table>
+					<tr>
+						<td>Row 1 Column 2</td>
+						<td>Row 1 Column 3</td>
+					</tr>
+					<tr>
+						<td colspan="2">Merged Cells</td>
+					</tr>
+				</table>
+			</td>
+			<td>Column 4</td>
+		</tr>
+	</table>
+	<br>
+	<table border="1">
+		<tr>
+			<td>Column 1</td>
+
+			<td rowspan="2">
+				<table>
+					<tr>
+						<td>Row 1, Column 2</td>						
+					</tr>
+					<tr>
+						<td>Row 2, Column 2</td>
+					</tr>
+				</table>
+			</td>
+			<td>lColumn 3</td>
+			<td>Column 4</td>
+			<td>Column 5</td>
+		</tr>
+	</table>
+	<br>
+	<table border="1">
+		<tr>
+			<th>Time Slot</th>
+			<th colspan="2">Day 1</th>
+			<th colspan="2">Day 2</th>
+		</tr>
+		<tr>
+			<td>7:00 AM</td>
+			<td>Session 1</td>
+			<td>Session 2</td>
+			<td>Session 3</td>
+			<td>Session 4</td>
+		</tr>
+		<tr>
+			<td>9:00 AM</td>
+			<td>Keynote</td>
+			<td>Agenda</td>
+			<td>Workshop</td>
+			<td>Networking</td>
+		</tr>
+	</table>
+	<br>
+	<table border="1">
+		<caption>Electronics Devices Table</caption>
+		<tr>
+			<th>Device ID</th>
+			<th>Device name</th>
+			<th>Device Attributes</th>
+			<th>Price (per pc.)</th>
+		</tr>
+		<tr>
+			<td>111</td>
+			<td>Refregerator</td>
+			<td rowspan="2">Color = Silver, Quantity = 1</td>
+			<td>45,000</td>
+		</tr>
+		<tr>
+			<td>222</td>
+			<td>Air Conditioner</td>
+			<td>55,000</td>
+		</tr>
+		<tr>
+			<td>333</td>
+			<td>Microwave Oven</td>
+			<td rowspan="2">Color = Black, Quantity = 2</td>
+			<td>30,000</td>
+		</tr>
+		<tr>
+			<td>444</td>
+			<td>Cloths Iron</td>
+			<td>6,000</td>
+		</tr>
+	</table>
+</body>
+</html>

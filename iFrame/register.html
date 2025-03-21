@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<style type="text/css">
+		h2
+		{
+			background-color: aqua;
+			text-align: center;
+			letter-spacing: 5px;
+			font-size: 28px;
+			color: darakblue;
+		}
+
+		table
+		{
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+<body>
+	<h2>Create Your Profile</h2>
+	<p>
+		<form action="#" method="post" name="reg" id="reg" enctype="multipart/form-data">
+			<table border="1">
+				<tr>
+					<th>Name:</th>
+					<td>
+						<input type="text" name="name">
+					</td>
+					<th>Phone:</th>
+					<td>
+						<input type="text" name="phone" placeholder="Enter your contact number">
+					</td>
+				</tr>
+				<tr>
+					<th>Email:</th>
+					<td>
+						<input type="email" name="email">
+					</td>
+					<th>NID:</th>
+					<td>
+						<input type="text" name="nid">
+					</td>
+				</tr>
+				<tr>
+					<th>Gender:</th>
+					<td>
+						<input type="radio" name="gender" value="male" checked>Male
+						<input type="radio" name="gender" value="female">Female
+					</td>
+					<th>Date of Birth:</th>
+					<td>
+						<input type="date" name="dob" id="">
+					</td>
+				</tr>
+				<tr>
+					<th>Education:</th>
+					<td>
+						<input type="checkbox" name="edu" id="" value="S.S.C" checked disabled>S.S.C
+						<input type="checkbox" name="edu" id="" value="H.S.C">H.S.C
+						<input type="checkbox" name="edu" id="" value="B.Sc">B.Sc
+						<input type="checkbox" name="edu" id="" value="M.Sc">M.Sc
+					</td>
+					<th>District:</th>
+					<td>
+						<select>
+							<option value="" selected="selected">Dhaka</option>
+							<option>Chittagong</option>
+							<option>Comilla</option>
+							<option>Sylhet</option>
+							<option>Khulna</option>
+							<option>Barisal</option>
+							<option>Rajshahi</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th>Attach Your Certificates:</th>
+					<td colspan="2">
+						<input type="file" name="cert">
+					</td>
+				</tr>
+				<tr>
+					<th>Mailing Address:</th>
+					<td colspan="2">
+						<textarea name="address" id="" cols="50" rows="5">Your Address</textarea>
+					</td>
+					<td>
+						<input type="submit" name="submit" value="Register">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</p>
+
+</body>
+</html>
